@@ -8,6 +8,11 @@ public class U05aShoesApp {
       System.out.println(fav.toString());
       
       /* Create a 2nd unique test of Shoes here */
-      
+      Shoes secondFav = new Shoes();
+      secondFav.setColor("Green");
+      fav.setBrand("Adidas");
+      fav.setType("Running");
+      fav.setSize(10.5);
+      System.out.println(fav.toString());
     }
   }
