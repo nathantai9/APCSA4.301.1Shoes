@@ -4,8 +4,7 @@ public class Shoes {
     private String color;
     private String brand;
     private String type;
-    private boolean size;
-    private int modelNumber;
+    private double size;
   
     // methods go here
     // create public methods setBrand, setType, setSize, getModelNumber
@@ -29,17 +28,16 @@ public class Shoes {
     }
 
     // getModelNumber
-    public void getModelNumber(int _modelNumber){
-      modelNumber = _modelNumber;
+    public String getModelNumber(){
+      return brand.substring(0, 1).toLowerCase() +
+      type.substring(0, 1).toLowerCase() +
+      color.toLowerCase() +
+      size;
     }
 
     // update the toString method to return expected output
     // NOTE: do NOT include the model number here!
     public String toString(){
-      return
-      brand.substring(0, 1).toLowerCase() +
-      type.substring(0, 1).toLowerCase() +
-      ;
+      return "Brand: " + brand + ", Type: " + type + ", Color: " + color + ", Size: " + size;
     }
-  
-  }
+}
