@@ -8,7 +8,6 @@ public class U05aShoesApp {
       System.out.println(fav.toString());
       
       /* Create a 2nd unique test of Shoes here */
-  
-  
+      
     }
   }
